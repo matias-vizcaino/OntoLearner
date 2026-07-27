@@ -4,12 +4,14 @@ This branch is **supplementary reproduction material** for the Semantic-Swingers
 [LLMs4OL 2026](https://sites.google.com/view/llms4ol2026). It is **not** part of the library
 integration and is **not** proposed for merge upstream — that is the pull request below.
 
+- **Methodological diagram:** [`METHODOLOGY.md`](../METHODOLOGY.md) — the shared two-stage pipeline and per-task specialization.
 - **Native integration PR:** [sciknoworg/OntoLearner#338](https://github.com/sciknoworg/OntoLearner/pull/338)
 - **Submission announcement issue:** [sciknoworg/OntoLearner#339](https://github.com/sciknoworg/OntoLearner/issues/339)
 - **Fine-tuned weights (Hugging Face Hub, public):**
   - [`datagero/qwen3.5-9b-ontology-extraction-raft`](https://huggingface.co/datagero/qwen3.5-9b-ontology-extraction-raft) — Task A, retrieval-aware FT (k=10), CUDA/peft
   - [`datagero/qwen3.5-9b-ontology-extraction-baseft`](https://huggingface.co/datagero/qwen3.5-9b-ontology-extraction-baseft) — Task A, base FT (k=0), CUDA/peft
   - [`datagero/qwen3.5-9b-ontology-extraction-baseft-mlx`](https://huggingface.co/datagero/qwen3.5-9b-ontology-extraction-baseft-mlx) — Task A, base FT, Apple-Silicon/MLX
+  - [`datagero/taxonomy-structural-matrix-1024-mxbai`](https://huggingface.co/datagero/taxonomy-structural-matrix-1024-mxbai) — Task C, bilinear structural matrix `W` (1024-D, mxbai)
 
 ## What `pipeline_ontolearner.ipynb` shows
 
